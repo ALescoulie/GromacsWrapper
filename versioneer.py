@@ -315,7 +315,7 @@ def get_root():
                "(like 'python path/to/setup.py COMMAND').")
         raise VersioneerBadRootError(err)
     try:
-        # Certain runtime workflows (setup.py install/develop in a setuptools
+        # Certain runtime workflow (setup.py install/develop in a setuptools
         # tree) execute all dependencies in a single python process, so
         # "versioneer" may be imported multiple times, and python's shared
         # module-import table will cache the first one. So we can't use
